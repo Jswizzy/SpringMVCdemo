@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Exercise Tracker</h1>
+    <form th:method="POST" th:action="${action}">
+        <div class="form-group">
+            <label>Minutes of exercise today: </label>
+            <input class="form-control" name="minutes"/>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</body>
+</html>
